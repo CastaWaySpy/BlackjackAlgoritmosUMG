@@ -1,7 +1,15 @@
 import random
 import time
+import os
+
+
+os.system('mode con: cols=110 lines=30')
+
 
 PAUSA = 1.5
+
+def limpiar_pantalla():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 # Crear baraja estándar de 52 cartas
 def crear_baraja():
@@ -110,7 +118,14 @@ def modo_un_jugador():
 
         if saldo <= 0:
             print("Te quedaste sin dinero. Fin del juego.")
+            volver = input("\n¿Jugar de nuevo? (s/n): ").lower()
+            if volver != 's':
+                return
+            else:
+                limpiar_pantalla()
+                menu()
             return
+            
 
         baraja = crear_baraja()
         apuesta = int(input("Apuesta: "))
