@@ -7,7 +7,7 @@ import random
 import time
 import os
 
-
+#Esto era un intento de manipular las dimensiones de la ventada de la terminal pero no me funcionó, aunque en otro equipo si funcionó asi que lo ideal es ejecutar el código en una terminal como CMD simbolo del sistema
 os.system('mode con: cols=110 lines=30')
 
 
@@ -236,3 +236,4 @@ def menu():
 
 
 menu()
+
