@@ -1,3 +1,8 @@
+# Juego de Blackjack en python
+# Sergio David Zea Cisneros
+# 25-10-2025
+# Ingenieria en Sistemas- Segundo Semestre
+
 import random
 import time
 import os
@@ -228,5 +233,6 @@ def menu():
         modo_dos_jugadores()
     else:
         print("Hasta la próxima.")
+
 
 menu()
