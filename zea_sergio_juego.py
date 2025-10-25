@@ -156,7 +156,12 @@ def modo_un_jugador():
 
         seguir = input("\n¿Jugar otra ronda? (s/n): ").lower()
         if seguir != 's':
+            print("Hasta la próxima.")
+            time.sleep(1.5) #Pausa de 1.5 segundos para que el usuario pueda leer el mensaje    
+            limpiar_pantalla()
+            menu()
             return
+            
         ronda += 1
 
 # Modo de 2 jugadores
@@ -236,4 +241,3 @@ def menu():
 
 
 menu()
-
